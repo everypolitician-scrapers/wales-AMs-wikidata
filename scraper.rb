@@ -4,5 +4,5 @@
 require 'wikidata/fetcher'
 
 
-names = WikiData::Category.new( 'Category:Wales AMs 2011–', 'en').member_titles
+names = WikiData::Category.new( 'Category:Wales AMs 2011–16', 'en').member_titles
 EveryPolitician::Wikidata.scrape_wikidata(names: { en: names })
